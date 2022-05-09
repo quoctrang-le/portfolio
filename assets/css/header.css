@@ -1,0 +1,40 @@
+header {
+    width: 100%;
+    font-weight: bold;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 16px 20px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.navbar-wrapper {}
+
+.navbar-menu {
+    display: flex;
+}
+
+.navbar-item {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.navbar-item-link {
+    letter-spacing: 1px;
+}
+
+.navbar-item:first-child {
+    padding-left: none;
+}
+
+.navbar-item:last-child {
+    padding-right: none;
+}
