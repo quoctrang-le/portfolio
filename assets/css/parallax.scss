@@ -1,67 +1,8 @@
 //start parallax
 $mobile: 650px;
 $navbar: 1120px;
+$ipad: 1200px;
 //start header
-.header {
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3% 16%;
-        .logo {
-            color: white;
-            font-weight: bold;
-            font-size: 3rem;
-        }
-        .navbar__wrapper {
-            .navbar__menu {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                position: relative;
-                .navbar__item {
-                    list-style: none;
-                    position: relative;
-                    font-weight: 500;
-                    margin-right: 20px;
-                    opacity: .8;
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        width: 0;
-                        height: 2px;
-                        left: 0;
-                        bottom: -50%;
-                        background-color: white;
-                        transition: all 0.2s linear;
-                    }
-                    &:hover::before {
-                        width: 100%;
-                    }
-                    &:hover {
-                        opacity: 1;
-                    }
-                    .navbar__item__link {
-                        color: white;
-                        letter-spacing: 3px;
-                    }
-                }
-            }
-        }
-        .hamburgur {
-            display: none;
-            color: white;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-    }
-}
-
 //end header
 .parallax__wrapper {
     width: 100vw;
@@ -174,16 +115,19 @@ $navbar: 1120px;
         span {
             font-size: 1rem !important;
         }
+        .dynamic {
+            font-size: 1rem !important;
+        }
     }
     .svg__wave {}
 }
 
-@media(max-width: $navbar) {
-    .navbar__wrapper {
-        display: none;
-    }
-    .hamburgur {
-        display: block !important;
+@media (max-width: $ipad) {
+    .parallax__description {
+        padding-top: 40% !important;
+        h1 {
+            font-size: 3rem !important;
+        }
     }
 }
 

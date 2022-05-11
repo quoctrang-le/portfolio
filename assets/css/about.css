@@ -1,0 +1,56 @@
+.about__wrapper {
+  max-width: 100vw;
+  height: 80vh;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  overflow-x: hidden;
+}
+
+.about__wrapper .about__image {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__wrapper .about__image .image {
+  background-image: url("../images/about-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45%;
+  height: 65%;
+  -webkit-box-shadow: -50px 50px 0 0 #e9e9e9;
+          box-shadow: -50px 50px 0 0 #e9e9e9;
+  margin-left: 33%;
+}
+
+.about__wrapper .about__text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  height: 65%;
+  margin-left: -5%;
+}
+/*# sourceMappingURL=about.css.map */
