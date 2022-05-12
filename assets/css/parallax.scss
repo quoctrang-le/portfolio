@@ -106,6 +106,15 @@ $ipad: 1200px;
     }
 }
 
+@media (max-width: $ipad) {
+    .parallax__description {
+        padding-top: 40% !important;
+        h1 {
+            font-size: 3rem !important;
+        }
+    }
+}
+
 @media (max-width: $mobile) {
     .parallax__description {
         padding-top: 50% !important;
@@ -118,17 +127,11 @@ $ipad: 1200px;
         .dynamic {
             font-size: 1rem !important;
         }
-    }
-    .svg__wave {}
-}
-
-@media (max-width: $ipad) {
-    .parallax__description {
-        padding-top: 40% !important;
-        h1 {
-            font-size: 3rem !important;
+        .animation {
+            .parallax__item__text {}
         }
     }
+    .svg__wave {}
 }
 
 // end parallax

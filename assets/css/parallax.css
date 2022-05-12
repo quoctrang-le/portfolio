@@ -146,6 +146,15 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .parallax__description {
+    padding-top: 40% !important;
+  }
+  .parallax__description h1 {
+    font-size: 3rem !important;
+  }
+}
+
 @media (max-width: 650px) {
   .parallax__description {
     padding-top: 50% !important;
@@ -158,15 +167,6 @@
   }
   .parallax__description .dynamic {
     font-size: 1rem !important;
-  }
-}
-
-@media (max-width: 1200px) {
-  .parallax__description {
-    padding-top: 40% !important;
-  }
-  .parallax__description h1 {
-    font-size: 3rem !important;
   }
 }
 /*# sourceMappingURL=parallax.css.map */

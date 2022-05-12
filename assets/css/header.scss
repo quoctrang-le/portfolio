@@ -46,7 +46,8 @@ $navbar: 1120px;
                     .navbar__item__link {
                         color: white;
                         letter-spacing: 2px;
-                        font-weight: bold;
+                        font-weight: 500;
+                        transition: all 0.2s linear;
                     }
                 }
             }

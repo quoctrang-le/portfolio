@@ -68,7 +68,9 @@
 .header nav .navbar__wrapper .navbar__menu .navbar__item .navbar__item__link {
   color: white;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-weight: 500;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .header nav .hamburgur {

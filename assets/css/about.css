@@ -14,7 +14,7 @@
 }
 
 .about__wrapper .about__container {
-  width: 80%;
+  max-width: 80%;
   height: 90%;
   position: relative;
   display: -webkit-box;
@@ -26,6 +26,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .about__wrapper .about__container .image {
@@ -51,7 +53,97 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 70%;
+  margin: 0 2%;
+  width: 40%;
+  opacity: .8;
+}
+
+.about__wrapper .about__container .about__text h1 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.about__wrapper .about__container .about__text h3 {
+  font-weight: 200;
+  margin-top: -5%;
+}
+
+.about__wrapper .about__container .about__text p {
+  font-weight: lighter;
+}
+
+.about__wrapper .about__container .about__text .icon__wrapper {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__wrapper .about__container .about__text .icon__wrapper span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: black;
+  -webkit-transition: .3s all linear;
+  transition: .3s all linear;
+  cursor: pointer;
+}
+
+.about__wrapper .about__container .about__text .icon__wrapper span i {
+  color: white;
+}
+
+.about__wrapper .about__container .about__text .icon__wrapper span:hover {
+  background-color: white;
+  border: 2px solid black;
+}
+
+.about__wrapper .about__container .about__text .icon__wrapper span:hover i {
+  color: black;
+}
+
+.about__wrapper .about__container .about__text button {
+  max-width: 25%;
+  height: 10%;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  -webkit-transition: .2s all linear;
+  transition: .2s all linear;
+}
+
+.about__wrapper .about__container .about__text button:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
+@media (max-width: 1400px) {
+  .about__container .image {
+    display: block !important;
+  }
 }
 /*# sourceMappingURL=about.css.map */
