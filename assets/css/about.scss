@@ -1,44 +1,38 @@
 .about__wrapper {
     width: 100vw;
     height: 80vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .about__container {
-        max-width: 80%;
-        height: 90%;
-        position: relative;
+    display: grid;
+    grid-template-columns: 45vw 55vw;
+    grid-column-gap: 30px;
+    .image__wrapper {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-self: center;
         .image {
             background-image: url('../images/about-img.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             box-shadow: -50px 50px 0 0 #e9e9e9;
-            height: 70%;
-            width: 30%;
+            width: 24vw;
+            height: 49.5vh;
         }
-        .about__text {
-            position: relative;
+    }
+    .about__text {
+        width: 40vw;
+        height: 49.5vh;
+        align-self: center;
+        .about__text__wrapper {
             display: flex;
-            align-items: left;
             flex-direction: column;
             justify-content: space-between;
-            height: 70%;
-            margin: 0 2%;
-            width: 40%;
-            opacity: .8;
+            height: 100%;
             h1 {
                 font-size: 2rem;
                 font-weight: lighter;
             }
             h3 {
                 font-weight: 200;
-                margin-top: -5%;
             }
             p {
                 font-weight: lighter;
@@ -92,9 +86,53 @@
 }
 
 @media (max-width: 1400px) {
-    .about__container {
-        .image {
-            display: block !important;
+    .about__wrapper {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5rem;
+        .image__wrapper {
+            justify-content: center;
+            .image {
+                width: 50%;
+                box-shadow: none;
+            }
+        }
+        .about__text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .about__text__wrapper {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .about__wrapper {
+        grid-template-columns: 1fr;
+        grid-row-gap: 5rem;
+        .image__wrapper {
+            justify-content: center;
+            .image {
+                width: 80%;
+                box-shadow: none;
+            }
+        }
+        .about__text {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .about__text__wrapper {
+                width: 80%;
+                .icon__wrapper {
+                    width: 50%;
+                    margin: 1rem 0;
+                }
+                button {
+                    min-width: 50%;
+                    min-height: 10%;
+                }
+            }
         }
     }
 }

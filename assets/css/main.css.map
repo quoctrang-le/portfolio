@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,SAAS;EACtB,eAAe,EAAE,IAAI;EACrB,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,EAAE,MAAM;CACrB",
-    "sources": [
-        "main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,sBACA,sBACA,qBACA,uBAGJ,KACI","file":"main.css","sourcesContent":["* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Poppins';\n    text-decoration: none;\n    scroll-behavior: smooth;\n}\n\nbody {\n    overflow-x: hidden;\n}"]}
