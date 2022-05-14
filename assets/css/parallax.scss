@@ -26,7 +26,7 @@ $ipad: 1200px;
         background-color: rgba(0, 0, 0, 0.5);
         padding: 15% 0 0 15%;
         h1 {
-            font-size: 6rem;
+            font-size: 4rem;
             color: white;
             font-weight: 600;
         }
@@ -108,7 +108,6 @@ $ipad: 1200px;
 
 @media (max-width: $ipad) {
     .parallax__description {
-        padding-top: 40% !important;
         h1 {
             font-size: 3rem !important;
         }
