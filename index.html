@@ -15,10 +15,15 @@
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/about.css">
     <link rel="stylesheet" href="./assets/css/services.css">
+    <link rel="stylesheet" href="./assets/css/experiences.css">
     <title>TRANG</title>
 </head>
 
 <body>
+    <div id="preload">
+    </div>
+    <!-- <div id="preloader"></div> -->
+
     <!-- start header -->
     <header class="header">
         <nav>
@@ -32,7 +37,7 @@
                         <a href="#about__wrapper" class="navbar__item__link">About</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" class="navbar__item__link">Services</a>
+                        <a href="#services__wrapper" class="navbar__item__link">Services</a>
                     </li>
                     <li class="navbar__item">
                         <a href="#" class="navbar__item__link">Works</a>
@@ -111,8 +116,8 @@
 
 
     <!-- start services -->
-    <div style="height: 10vh;" id="services__wrapper"></div>
-    <section class="services__wrapper">
+    <div style="height: 15vh;" ></div>
+    <section id="services__wrapper" class="services__wrapper">
         <div class="title">
             <h3>SERVICES</h3>
             <h1>WHAT I CAN DO</h1>
@@ -152,7 +157,36 @@
     </section>
     <!-- end services -->
 
+    <!-- start experiences -->
+    <div style="height: 10vh; background-color: #f2f2f2;" id="experiences__wrapper"></div>
+    <section class="experiences__wrapper">
+        <div class="box__model"></div>
+        <div class="item__wrapper">
+            <div class="item">
+                <span><i class="fa-solid fa-users"></i></span>
+                <h3 class="countUp" data-target="220"></h3>
+                <h3>Happy Clients</h3>
+            </div>
+            <div class="item">
+                <span><i class="fa-solid fa-thumbs-up"></i></span>
+                <h3 class="countUp" data-target="700"></h3>
+                <h3>Projects Completed</h3>
+            </div>
+            <div class="item">
+                <span><i class="fa fa-edit"></i></span>
+                <h3 class="countUp" data-target="1100"></h3>
+                <h3>Lines Of Code</h3>
+            </div>
+            <div class="item">
+                <span><i class="fa fa-trophy"></i></span>
+                <h3 class="countUp" data-target="160"></h3>
+                <h3>Awards Achieved</h3>
+            </div>
+        </div>
+    </section>
+    <!-- end experiences -->
 
+    <div style="height: 150vh;"></div>
     <script src="./assets/js/main.js"></script>
 </body>
 
