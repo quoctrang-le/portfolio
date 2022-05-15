@@ -10,3 +10,64 @@
 body,html {
     overflow-x: hidden;
 }
+
+#preload{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: black url('../images/preload.gif') no-repeat center center;
+    background-size: 20%;
+    z-index: 100;
+    transition-delay: 1s;
+}
+
+// #preloader{
+//     width: 100vw;
+//     height: 100vh;
+//     position: fixed;
+//     background: white no-repeat center center;
+//     background-size: 20%;
+//     z-index: 100;
+// }
+
+// #preloader::after{
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     left: 0;
+//     height: 50%;
+//     background: black;
+//     animation: preloadAfter .7s ease-in-out;
+
+// }
+
+// #preloader::before{
+//     content: "";
+//     position: absolute;
+//     width: 100%;
+//     bottom: 0;
+//     height: 50%;
+//     background: black;
+//     animation: preloadBefore .7s ease-in-out;
+
+// }
+
+// @keyframes preloadBefore {
+//     0%{
+//         top: 50%;
+//     }
+//     100%{
+//         top: 100%;
+//     }
+    
+// }
+
+// @keyframes preloadAfter {
+//     0%{
+//         bottom: 50%;
+//     }
+//     100%{
+//         bottom: 100%;
+//     }
+    
+// }

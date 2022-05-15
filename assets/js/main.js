@@ -44,6 +44,14 @@ counters.forEach((counter) => {
     }
   }
   window.addEventListener('scroll', () => {
-    if (pageYOffset >= 1750 && pageYOffset <= 1800) updateCounter()
+    if (pageYOffset >= 1750 && pageYOffset <= 2000) updateCounter()
   })
 })
+
+const pre = document.getElementById('preload')
+function preloader() {
+  setTimeout(() => {
+    pre.style.display = 'none'
+  }, 2000)
+}
+preloader()

@@ -1,1 +1,9 @@
-{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,EACI,SACA,UACA,sBACA,sBACA,qBACA,uBAGJ,UACI","file":"main.css","sourcesContent":["* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Poppins';\r\n    text-decoration: none;\r\n    scroll-behavior: smooth;\r\n}\r\n\r\nbody,html {\r\n    overflow-x: hidden;\r\n}"]}
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;EACtB,WAAW,EAAE,SAAS;EACtB,eAAe,EAAE,IAAI;EACrB,eAAe,EAAE,MAAM;CAC1B;;AAED,AAAA,IAAI,EAAC,IAAI,CAAC;EACN,UAAU,EAAE,MAAM;CACrB;;AAED,AAAA,QAAQ,CAAA;EACJ,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,QAAQ,EAAE,KAAK;EACf,UAAU,EAAE,KAAK,CAAC,4BAA4B,CAAC,SAAS,CAAC,MAAM,CAAC,MAAM;EACtE,eAAe,EAAE,GAAG;EACpB,OAAO,EAAE,GAAG;EACZ,gBAAgB,EAAE,EAAE;CACvB",
+    "sources": [
+        "main.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}

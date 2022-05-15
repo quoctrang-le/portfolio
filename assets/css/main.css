@@ -1,2 +1,25 @@
-*{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins";text-decoration:none;scroll-behavior:smooth}body,html{overflow-x:hidden}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins';
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+#preload {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: black url("../images/preload.gif") no-repeat center center;
+  background-size: 20%;
+  z-index: 100;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+}
 /*# sourceMappingURL=main.css.map */
