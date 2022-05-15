@@ -1,0 +1,91 @@
+.experiences__wrapper {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7%;
+  background-image: url("../images/experiences.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  color: white;
+  background-attachment: fixed;
+}
+
+.experiences__wrapper .box__model {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.experiences__wrapper .item__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  z-index: 1;
+  width: 80rem;
+}
+
+.experiences__wrapper .item__wrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.experiences__wrapper .item__wrapper .item span {
+  border-bottom: 3px solid white;
+  padding: 10px 0;
+}
+
+.experiences__wrapper .item__wrapper .item span i {
+  font-size: 2rem;
+}
+
+.experiences__wrapper .item__wrapper .item h3 {
+  margin: 1rem 0 0.2rem 0;
+}
+
+@media (max-width: 970px) {
+  .item__wrapper {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .item__wrapper {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  .item__wrapper span i {
+    font-size: 1.5rem !important;
+  }
+  .item__wrapper h3 {
+    font-size: 1rem !important;
+  }
+}
+/*# sourceMappingURL=experiences.css.map */
