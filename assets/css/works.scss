@@ -1,0 +1,146 @@
+.works__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 10vw;
+    gap: 50px;
+    .title {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-weight: 400;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+        }
+        ul {
+            display: flex;
+            max-width: 50rem;
+            flex-wrap: wrap;
+            column-gap: 40px;
+            position: relative;
+            justify-content: center;
+            margin-top: 3rem;
+            li {
+                list-style: none;
+                position: relative;
+                font-weight: 400;
+                cursor: pointer;
+                color: #222222;
+                &::after {
+                    content: '/';
+                    position: absolute;
+                    right: -25px;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    left: 0;
+                    background-color: #222222;
+                    bottom: -5px;
+                    transition: all .2s linear;
+                }
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .works__container {
+        .works {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            .work {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                justify-self: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 25rem;
+                height: 20rem;
+                div {
+                    width: 90%;
+                    height: 90%;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    transition: .45s;
+                    transform: scale( 0.9);
+                    opacity: 0;
+                    h3 {
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+                    span {
+                        margin-top: 1rem;
+                        cursor: pointer;
+                        background-color: white;
+                        padding: .7rem .8rem;
+                        border-radius: .7rem;
+                        box-shadow: 0 0 15px 1px rgb(190, 190, 190);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                            font-weight: bold;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+                &:hover {
+                    div {
+                        transform: scale(1);
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    &::before {
+        width: 100% !important;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.works {
+    .show {
+        display: flex;
+    }
+}
+
+@media (max-width: 1500px) {
+    .works {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 950px) {
+    .works {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}

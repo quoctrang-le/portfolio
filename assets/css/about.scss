@@ -1,42 +1,41 @@
-.about__wrapper{
+.about__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    .about__container{
+    .about__container {
         padding-left: 6vw;
         max-width: 80vw;
         display: flex;
         flex-wrap: wrap;
-        .image__wrapper{
+        .image__wrapper {
             margin-right: 2vw;
             width: 27rem;
-            img{
+            img {
                 width: 100%;
                 box-shadow: -40px 40px 0 #e8e8e8;
             }
-
         }
-        .info__wrapper{
+        .info__wrapper {
             opacity: .8;
             width: 40rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding-bottom: 1vh;
-            h1{
+            h1 {
                 font-size: 2rem;
                 font-weight: 500;
             }
-            h3{
+            h3 {
                 font-weight: 500;
             }
-            .icon__wrapper{
+            .icon__wrapper {
                 width: 30%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                span{
+                span {
                     width: 2rem;
                     height: 2rem;
                     display: flex;
@@ -47,14 +46,14 @@
                     cursor: pointer;
                     color: white;
                     transition: .3s;
-                    &:hover{
+                    &:hover {
                         background-color: white;
                         border: 1px solid black;
                         color: black;
                     }
                 }
             }
-            button{
+            button {
                 max-width: 20%;
                 height: 2.5rem;
                 cursor: pointer;
@@ -64,7 +63,7 @@
                 color: white;
                 transition: .3s;
                 text-transform: uppercase;
-                &:hover{
+                &:hover {
                     background-color: white;
                     border: 1px solid black;
                     color: black;
@@ -74,44 +73,43 @@
     }
 }
 
-@media (max-width: 1495px){
-    .image__wrapper{
-        img{
+@media (max-width: 1495px) {
+    .image__wrapper {
+        img {
             box-shadow: none !important;
         }
     }
-    .info__wrapper{
-        h3{
+    .info__wrapper {
+        h3 {
             margin: 1rem 0;
         }
-        p{
+        p {
             margin: 1rem 0;
         }
-        .icon__wrapper{
+        .icon__wrapper {
             margin: 1rem 0;
         }
     }
 }
 
-@media (max-width: 700px){
-    .image__wrapper{
-        img{
+@media (max-width: 700px) {
+    .image__wrapper {
+        img {
             box-shadow: none !important;
         }
     }
-    .info__wrapper{
-        h3{
+    .info__wrapper {
+        h3 {
             margin: 1rem 0;
         }
-        p{
+        p {
             margin: 1rem 0;
         }
-        .icon__wrapper{
+        .icon__wrapper {
             margin: 1rem 0;
             min-width: 60%;
-
         }
-        button{ 
+        button {
             min-width: 50%;
         }
     }

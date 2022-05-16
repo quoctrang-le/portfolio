@@ -8,7 +8,8 @@
   scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
