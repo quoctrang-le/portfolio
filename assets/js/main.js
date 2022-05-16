@@ -49,14 +49,14 @@ counters.forEach((counter) => {
     })
 })
 
-// const pre = document.getElementById('preload')
+const pre = document.getElementById('preload')
 
-// function preloader() {
-//     setTimeout(() => {
-//         pre.style.display = 'none'
-//     }, 3000)
-// }
-// preloader()
+function preloader() {
+    setTimeout(() => {
+        pre.style.display = 'none'
+    }, 3000)
+}
+preloader()
 
 
 
@@ -85,3 +85,16 @@ for (let i = 0; i < lists.length; i++) {
         }
     })
 }
+
+let header = document.getElementById('header')
+let nav = document.getElementById('header__nav')
+
+window.addEventListener('scroll', () => {
+    if (pageYOffset > 200) {
+        header.classList.add('header__active')
+        nav.classList.add('header__nav__active')
+    } else {
+        header.classList.remove('header__active')
+        nav.classList.remove('header__nav__active')
+    }
+})
