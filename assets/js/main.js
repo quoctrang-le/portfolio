@@ -98,3 +98,18 @@ window.addEventListener('scroll', () => {
         nav.classList.remove('header__nav__active')
     }
 })
+
+const navbar_items = document.querySelectorAll('.navbar__item')
+const about = document.getElementById('about__wrapper')
+const services = document.getElementById('services__wrapper')
+const works = document.getElementById('works__wrapper')
+
+window.addEventListener('scroll', () => {
+    if (pageYOffset >= about.offsetTop - 200 && pageYOffset <= services.offsetTop) {
+        navbar_items[1].classList.add('navbar__item__active')
+    } else if (pageYOffset >= services.offsetTop - 200 && pageYOffset <= works.offsetTop) {
+        navbar_items[1].classList.remove('navbar__item__active')
+        navbar_items[2].classList.add('navbar__item__active')
+
+    }
+})

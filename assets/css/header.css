@@ -4,6 +4,8 @@
   z-index: 1;
   left: 0;
   width: 100%;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .header nav {
@@ -16,7 +18,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2% 16%;
+  padding: .5rem 14%;
 }
 
 .header nav .logo {
@@ -91,5 +93,26 @@
   .hamburgur {
     display: block !important;
   }
+}
+
+.header__active {
+  position: fixed !important;
+}
+
+.header__active .header__nav {
+  background-color: white !important;
+  padding: .5rem 14% !important;
+}
+
+.header__active .header__nav a {
+  color: black !important;
+}
+
+.header__active .header__nav .navbar__item::before {
+  background-color: black !important;
+}
+
+.navbar__item__active::before {
+  width: 100% !important;
 }
 /*# sourceMappingURL=header.css.map */

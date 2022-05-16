@@ -5,11 +5,12 @@ $navbar: 1120px;
     z-index: 1;
     left: 0;
     width: 100%;
+    transition: all .3s ease-in;
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2% 16%;
+        padding: .5rem 14%;
         .logo {
             color: white;
             font-size: 3rem;
@@ -74,18 +75,24 @@ $navbar: 1120px;
     }
 }
 
-// .header__active {
-//     position: fixed !important;
-//     transition: all .3s ease-in;
-//     .header__nav {
-//         background-color: white !important;
-//         a {
-//             color: black !important;
-//         }
-//         .navbar__item {
-//             &::before {
-//                 background-color: black !important;
-//             }
-//         }
-//     }
-// }
+.header__active {
+    position: fixed !important;
+    .header__nav {
+        background-color: white !important;
+        padding: .5rem 14% !important;
+        a {
+            color: black !important;
+        }
+        .navbar__item {
+            &::before {
+                background-color: black !important;
+            }
+        }
+    }
+}
+
+.navbar__item__active {
+    &::before {
+        width: 100% !important;
+    }
+}
