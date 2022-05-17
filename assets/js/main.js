@@ -35,7 +35,7 @@ counters.forEach((counter) => {
     const updateCounter = () => {
         const target = counter.getAttribute('data-target') // value count to
         const value = +counter.innerText // current value
-        const increment = target / 500 // how fast is nubmer increment
+        const increment = target / 600 // how fast is nubmer increment
 
         if (value < target) {
             counter.innerText = `${Math.ceil(value + increment)}`
@@ -54,7 +54,7 @@ const pre = document.getElementById('preload')
 function preloader() {
     setTimeout(() => {
         pre.style.display = 'none'
-    }, 3000)
+    }, 2000)
 }
 preloader()
 

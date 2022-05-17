@@ -57,6 +57,8 @@
   border-radius: 100%;
   z-index: 2;
   background-color: black;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .moveTop i {
@@ -64,5 +66,10 @@
   color: white;
   -webkit-transform: rotate(-44deg);
           transform: rotate(-44deg);
+}
+
+.moveTop:hover {
+  width: 3.5rem;
+  height: 3.5rem;
 }
 /*# sourceMappingURL=footer.css.map */
