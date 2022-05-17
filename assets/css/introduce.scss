@@ -1,0 +1,57 @@
+.introduce__wrapper {
+    width: 100vw;
+    background-image: url('../images/introduce.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4vw 25vw;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .49);
+    }
+    .slick-prev {
+        display: none !important;
+    }
+    .slick-next {
+        display: none !important;
+    }
+    .carousel {
+        z-index: 1;
+    }
+    .item_wrapper {
+        text-align: center;
+        color: white;
+        height: 50vh;
+        cursor: pointer;
+        .avt {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 100%;
+            background-image: url('../images/avt.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        h3 {
+            margin-top: 1rem;
+            font-size: 24px;
+        }
+        h5 {
+            margin-bottom: 1rem;
+            font-size: 14px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+}

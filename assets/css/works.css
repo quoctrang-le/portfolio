@@ -30,7 +30,6 @@
 }
 
 .works__wrapper .title h1 {
-  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -92,6 +91,7 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  padding: 0 10vw;
 }
 
 .works__wrapper .works__container .works .work {
@@ -108,7 +108,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 25rem;
+  width: 20rem;
   height: 20rem;
 }
 
@@ -196,6 +196,19 @@
   .works {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .works__wrapper .title ul li {
+    font-size: .7rem !important;
+  }
+  .works__wrapper .title ul li::after {
+    font-size: .7rem !important;
+  }
+  .works .work {
+    width: 13rem !important;
+    height: 13rem !important;
   }
 }
 /*# sourceMappingURL=works.css.map */

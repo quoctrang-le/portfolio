@@ -2,7 +2,7 @@ $navbar: 1120px;
 .header {
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 11;
     left: 0;
     width: 100%;
     transition: all .3s ease-in;
@@ -94,5 +94,18 @@ $navbar: 1120px;
 .navbar__item__active {
     &::before {
         width: 100% !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .header__nav {
+        padding: .5rem 7% !important;
+        a {
+            font-size: 20px !important;
+        }
+    }
+    .hamburgur {
+        color: black !important;
+        font-size: 20px !important;
     }
 }
