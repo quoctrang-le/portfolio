@@ -85,45 +85,18 @@ html {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     z-index: 999;
     pointer-events: none;
     transform: translate(-50%, -50%);
     border-radius: 100%;
-    box-shadow: 0 0 30px 1px #152a26;
-    animation: colors 5s infinite;
+    box-shadow: 0 0 50px 5px rgba(253, 253, 253, 0.6);
+    transition: all .3s ease-out;
+    border: 2px solid white;
+    // animation: colors 5s infinite;
 }
 
-@keyframes colors {
-    10% {
-        box-shadow: 0 0 30px 1px #7fb3a9;
-    }
-    20% {
-        box-shadow: 0 0 30px 1px #6f8816;
-    }
-    30% {
-        box-shadow: 0 0 30px 1px #072046;
-    }
-    40% {
-        box-shadow: 0 0 30px 1px #d41a9d;
-    }
-    50% {
-        box-shadow: 0 0 30px 1px #c00f0f;
-    }
-    60% {
-        box-shadow: 0 0 30px 1px #15179c;
-    }
-    70% {
-        box-shadow: 0 0 30px 1px #47ca26;
-    }
-    80% {
-        box-shadow: 0 0 30px 1px #b009b6;
-    }
-    90% {
-        box-shadow: 0 0 30px 1px #6b0718;
-    }
-    100% {
-        box-shadow: 0 0 30px 1px #152a26;
-    }
+.cursor2{
+    border: 2px solid black;
 }
