@@ -146,6 +146,7 @@
   color: white;
   -webkit-transition: .3s;
   transition: .3s;
+  padding: 0 10px;
 }
 
 .blog__wrapper .button__blog button:hover {

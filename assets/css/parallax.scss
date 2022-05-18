@@ -56,10 +56,14 @@
         left: 20%;
         animation: bounce 1.5s infinite ease-in-out;
         z-index: 1;
+        transition: .2s;
+        &:hover {
+            animation: none;
+        }
         a {
             color: white;
             font-weight: bold;
-            font-size: 2em;
+            font-size: 3em;
             cursor: pointer;
         }
     }
@@ -68,54 +72,50 @@
         height: 30%;
         margin-bottom: -6%;
     }
-
-
-@keyframes typing {
-    0% {
-        opacity: 0;
+    @keyframes typing {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
     }
-    50% {
-        opacity: 1;
+    @keyframes bounce {
+        0% {
+            bottom: 18%;
+        }
+        30% {
+            bottom: 22%;
+        }
+        50% {
+            bottom: 18%;
+        }
+        70% {
+            bottom: 20%;
+        }
+        100% {
+            bottom: 18%;
+        }
     }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes bounce {
-    0% {
-        bottom: 18%;
-    }
-    30% {
-        bottom: 22%;
-    }
-    50% {
-        bottom: 18%;
-    }
-    70% {
-        bottom: 20%;
-    }
-    100% {
-        bottom: 18%;
-    }
-}
-
     @media (max-width: 700px) {
-            .parallax__description {
-                padding-top: 40%;
-                h1 {
-                    font-size: 2rem;
-                }
-                .parallax__wrapper__span{
-                    span {
-                        font-size: 13px ;
-                        padding-left: 0;
-                    }
-                }
-                .dynamic {
-                    font-size: 1rem;
-                    margin-left: 5px;
+        .parallax__description {
+            padding-top: 40%;
+            h1 {
+                font-size: 2rem;
+            }
+            .parallax__wrapper__span {
+                span {
+                    font-size: 13px;
+                    padding-left: 0;
                 }
             }
+            .dynamic {
+                font-size: 1rem;
+                margin-left: 5px;
+            }
+        }
     }
 }

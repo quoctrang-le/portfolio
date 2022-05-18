@@ -35,7 +35,7 @@ counters.forEach((counter) => {
     const updateCounter = () => {
         const target = counter.getAttribute('data-target') // value count to
         const value = +counter.innerText // current value
-        const increment = target / 600 // how fast is nubmer increment
+        const increment = 1 // how fast is nubmer increment
 
         if (value < target) {
             counter.innerText = `${Math.ceil(value + increment)}`
@@ -51,12 +51,12 @@ counters.forEach((counter) => {
 
 const pre = document.getElementById('preload')
 
-function preloader() {
-    setTimeout(() => {
-        pre.style.display = 'none'
-    }, 2000)
-}
-preloader()
+// function preloader() {
+//     setTimeout(() => {
+//         pre.style.display = 'none'
+//     }, 2000)
+// }
+// preloader()
 
 const lists = document.querySelectorAll('.list')
 const items = document.querySelectorAll('.itemBox')
@@ -69,7 +69,6 @@ for (let i = 0; i < lists.length; i++) {
         this.classList.add('active')
 
         let dataFilter = this.getAttribute('data-filter')
-        console.log(dataFilter)
         for (let k = 0; k < items.length; k++) {
             items[k].classList.remove('show')
             items[k].classList.add('hide')
@@ -78,7 +77,6 @@ for (let i = 0; i < lists.length; i++) {
                 items[k].getAttribute('data-item') == dataFilter ||
                 dataFilter == 'all'
             ) {
-                console.log(items[k].getAttribute('data-item'))
                 items[k].classList.remove('hide')
                 items[k].classList.add('show')
             }
@@ -106,3 +104,27 @@ window.addEventListener('scroll', () => {
         document.querySelector('.moveTop').style.display = 'none'
     }
 })
+
+const closebutton = document.querySelector('.close')
+const hamburgur = document.querySelector('.hamburgur')
+const modelNavbarLink = document.querySelectorAll('.model__navbar__link')
+const modelNavbar = document.querySelector('.model__navbar')
+
+closebutton.addEventListener('click', () => {
+    modelNavbar.style.display = 'none'
+})
+
+hamburgur.addEventListener('click', () => {
+    modelNavbar.style.display = 'flex'
+
+})
+
+modelNavbarLink.forEach(i => i.addEventListener('click', () => {
+    modelNavbar.style.display = 'none'
+}))
+
+// const moveTop = document.querySelector('.moveTop')
+
+// moveTop.addEventListener('click', () => {
+//     window.scrollTo({ top: 0 })
+// })

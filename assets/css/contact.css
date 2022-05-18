@@ -97,6 +97,7 @@
   outline: none;
   border-bottom: 2px solid black;
   bottom: 0;
+  padding-top: 20px;
 }
 
 .contact__wrapper .contact__content form button {

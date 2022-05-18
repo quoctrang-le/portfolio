@@ -26,7 +26,6 @@
 </head>
 
 <body>
-
     <!-- <div id="preload">
     </div> -->
     <header id="header" class="header animate__animated animate__slideInDown">
@@ -75,13 +74,13 @@
             <a href="#about__wrapper" class="fa-solid fa-angle-down"></a>
         </div>
         <svg class="parallax__item svg__wave" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path
-            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-            class="shape-fill"
-            fill="#FFFFFF"
-            fill-opacity="1"
-            >
-            </path>
+                <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"
+                fill="#FFFFFF"
+                fill-opacity="1"
+                >
+                </path>
         </svg>
     </section>
     <!-- end parallax -->
@@ -177,7 +176,7 @@
     <!-- start experiences -->
     <div style="height: 10vh; background-color: #f2f2f2" id="experiences__wrapper"></div>
     <section class="experiences__wrapper">
-        <div class="box__model"></div>
+        <div class="box--model"></div>
         <div class="item__wrapper">
             <div class="item">
                 <span><i class="fa-solid fa-users"></i></span>
@@ -362,7 +361,7 @@
         </div>
     </section>
     <!-- end introduction -->
-    
+
     <!-- start contact -->
     <div id="contact__wrapper" style="height: 10vh;"></div>
     <section class="contact__wrapper">
@@ -381,7 +380,7 @@
             </form>
         </div>
     </section>
-<!-- end contact -->
+    <!-- end contact -->
 
 
     <div id="footer__wrapper" style="height: 10vh;"></div>
@@ -408,11 +407,36 @@
         <h6>Kalvin © 2021. All Right Reserved, Designed By Cosmos-Themes.</h6>
     </section>
     <span class="moveTop animate__animated animate__backInUp">
-        <a href="#">
+        
             <i class="fa-solid fa-rocket"></i>
-        </a>
+        
     </span>
+
+    <div class="model__navbar animate__animated animate__fadeInDownBig">
+        <i class="fa-solid fa-xmark close"></i>
+        <ul>
+            <li>
+                <a class="model__navbar__link" href="#">Home</a>
+            </li>
+            <li>
+                <a class="model__navbar__link" href="#about__wrapper">About</a>
+            </li>
+            <li>
+                <a class="model__navbar__link" href="#services__wrapper">Services</a>
+            </li>
+            <li>
+                <a class="model__navbar__link" href="#works__wrapper">Works</a>
+            </li>
+            <li>
+                <a class="model__navbar__link" href="#blog__wrapper">Blog</a>
+            </li>
+            <li>
+                <a class="model__navbar__link" href="#contact__wrapper">Contact</a>
+            </li>
+        </ul>
+    </div>
     <script src="./assets/js/main.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
@@ -440,11 +464,9 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
             });
-
-
-
         });
     </script>
+
 </body>
 
 </html>
