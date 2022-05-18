@@ -11,6 +11,7 @@
 body,
 html {
   overflow-x: hidden;
+  position: relative;
 }
 
 #preload {
@@ -105,5 +106,108 @@ html {
 
 .show--model {
   display: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 5rem;
+  height: 5rem;
+  z-index: 999;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 30px 1px #152a26;
+          box-shadow: 0 0 30px 1px #152a26;
+  -webkit-animation: colors 5s infinite;
+          animation: colors 5s infinite;
+}
+
+@-webkit-keyframes colors {
+  10% {
+    -webkit-box-shadow: 0 0 30px 1px #7fb3a9;
+            box-shadow: 0 0 30px 1px #7fb3a9;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 30px 1px #6f8816;
+            box-shadow: 0 0 30px 1px #6f8816;
+  }
+  30% {
+    -webkit-box-shadow: 0 0 30px 1px #072046;
+            box-shadow: 0 0 30px 1px #072046;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 30px 1px #d41a9d;
+            box-shadow: 0 0 30px 1px #d41a9d;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 30px 1px #c00f0f;
+            box-shadow: 0 0 30px 1px #c00f0f;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 30px 1px #15179c;
+            box-shadow: 0 0 30px 1px #15179c;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 30px 1px #47ca26;
+            box-shadow: 0 0 30px 1px #47ca26;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 30px 1px #b009b6;
+            box-shadow: 0 0 30px 1px #b009b6;
+  }
+  90% {
+    -webkit-box-shadow: 0 0 30px 1px #6b0718;
+            box-shadow: 0 0 30px 1px #6b0718;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px 1px #152a26;
+            box-shadow: 0 0 30px 1px #152a26;
+  }
+}
+
+@keyframes colors {
+  10% {
+    -webkit-box-shadow: 0 0 30px 1px #7fb3a9;
+            box-shadow: 0 0 30px 1px #7fb3a9;
+  }
+  20% {
+    -webkit-box-shadow: 0 0 30px 1px #6f8816;
+            box-shadow: 0 0 30px 1px #6f8816;
+  }
+  30% {
+    -webkit-box-shadow: 0 0 30px 1px #072046;
+            box-shadow: 0 0 30px 1px #072046;
+  }
+  40% {
+    -webkit-box-shadow: 0 0 30px 1px #d41a9d;
+            box-shadow: 0 0 30px 1px #d41a9d;
+  }
+  50% {
+    -webkit-box-shadow: 0 0 30px 1px #c00f0f;
+            box-shadow: 0 0 30px 1px #c00f0f;
+  }
+  60% {
+    -webkit-box-shadow: 0 0 30px 1px #15179c;
+            box-shadow: 0 0 30px 1px #15179c;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 30px 1px #47ca26;
+            box-shadow: 0 0 30px 1px #47ca26;
+  }
+  80% {
+    -webkit-box-shadow: 0 0 30px 1px #b009b6;
+            box-shadow: 0 0 30px 1px #b009b6;
+  }
+  90% {
+    -webkit-box-shadow: 0 0 30px 1px #6b0718;
+            box-shadow: 0 0 30px 1px #6b0718;
+  }
+  100% {
+    -webkit-box-shadow: 0 0 30px 1px #152a26;
+            box-shadow: 0 0 30px 1px #152a26;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -67,6 +67,9 @@
 }
 
 @media (max-width: 500px) {
+  .introduce__wrapper {
+    padding: 1vh 10vw;
+  }
   .introduce__wrapper .item_wrapper h3 {
     font-size: 16px;
   }

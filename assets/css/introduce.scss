@@ -54,7 +54,11 @@
             font-size: 14px;
         }
     }
-    @media (max-width: 500px) {
+}
+
+@media (max-width: 500px) {
+    .introduce__wrapper {
+        padding: 1vh 10vw;
         .item_wrapper {
             h3 {
                 font-size: 16px;

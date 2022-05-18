@@ -43,9 +43,6 @@
             .countUp {
                 font-size: 2rem;
             }
-            h3 {
-                margin: 1rem 0 0.2rem 0;
-            }
         }
     }
     @media (max-width: 970px) {
@@ -68,6 +65,9 @@
                 }
                 &:first-child {
                     margin-top: 0;
+                }
+                .countUp {
+                    font-size: 18px;
                 }
             }
         }

@@ -1,9 +1,16 @@
 const parallax = document.querySelector('.parallax__wrapper')
+const show__header = document.querySelector('.header__nav')
 
 window.addEventListener('scroll', function() {
     let offset = window.pageYOffset
-
     parallax.style.backgroundPositionY = offset * 0.7 + 'px'
+    if (pageYOffset > 200) {
+        show__header.classList.add('show__header')
+        show__header.parentElement.style.position = 'fixed'
+    } else {
+        show__header.classList.remove('show__header')
+
+    }
 })
 
 const texts = ['HTML', 'CSS', 'JAVASCRIPT', 'REACTJS']
@@ -24,7 +31,7 @@ let letter = ''
         count++
         index = 0
     }
-    setTimeout(type, 300)
+    setTimeout(type, 200)
 })()
 
 const counters = document.querySelectorAll('.countUp')
@@ -51,12 +58,12 @@ counters.forEach((counter) => {
 
 const pre = document.getElementById('preload')
 
-// function preloader() {
-//     setTimeout(() => {
-//         pre.style.display = 'none'
-//     }, 2000)
-// }
-// preloader()
+function preloader() {
+    setTimeout(() => {
+        pre.style.display = 'none'
+    }, 2000)
+}
+preloader()
 
 const lists = document.querySelectorAll('.list')
 const items = document.querySelectorAll('.itemBox')
@@ -123,8 +130,22 @@ modelNavbarLink.forEach(i => i.addEventListener('click', () => {
     modelNavbar.style.display = 'none'
 }))
 
-// const moveTop = document.querySelector('.moveTop')
+const moveTop = document.querySelector('.moveTop')
 
-// moveTop.addEventListener('click', () => {
-//     window.scrollTo({ top: 0 })
-// })
+moveTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0 })
+})
+
+const cursor = document.querySelector('.cursor')
+
+window.addEventListener('mousemove', (e) => {
+    let x = e.clientX
+    let y = e.clientY
+    cursor.style.top = y + 'px'
+    cursor.style.left = x + 'px'
+    cursor.style.display = 'block'
+})
+
+window.addEventListener('mouseout', () => {
+    cursor.style.display = 'none'
+})

@@ -69,10 +69,6 @@
   font-size: 2rem;
 }
 
-.experiences__wrapper .item__wrapper .item h3 {
-  margin: 1rem 0 0.2rem 0;
-}
-
 @media (max-width: 970px) {
   .experiences__wrapper .item__wrapper {
     -ms-grid-columns: 1fr 1fr;
@@ -96,6 +92,9 @@
   }
   .experiences__wrapper .item__wrapper .item:first-child {
     margin-top: 0;
+  }
+  .experiences__wrapper .item__wrapper .item .countUp {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=experiences.css.map */

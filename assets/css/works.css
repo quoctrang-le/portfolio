@@ -229,7 +229,7 @@
   }
 }
 
-.active::before {
+.works__wrapper .title .active::before {
   width: 100%;
 }
 /*# sourceMappingURL=works.css.map */
