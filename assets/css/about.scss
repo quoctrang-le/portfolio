@@ -71,60 +71,81 @@
             }
         }
     }
-
-
-@media (max-width: 1495px) {
-    .about__container{
-        .image__wrapper {
-            img {
-                box-shadow: none;
-            }
-        }
-        .info__wrapper {
-            h3 {
-                margin: 1rem 0;
-            }
-            p {
-                margin: 1rem 0;
-            }
-            .icon__wrapper {
-                margin: 1rem 0;
-            }
-            .icon__wrapper{
-                min-width: 40vw;
-            }
-            button{
-                min-width: 30vw;
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) {
-    .about__container{
-        .info__wrapper {
-            h1{
-                font-size: 1rem;
-            }
-            h3{
-                font-size: 1rem;
-            }
-            p{
-                font-size: .8rem;
-            }
-            .icon__wrapper{
-                min-width: 60vw;
-                    
-                span{
-                    width: 1.5rem;
-                    height: 1.5rem;
+    @media (max-width: 1495px) {
+        .about__container {
+            .image__wrapper {
+                img {
+                    box-shadow: none;
                 }
-                
             }
-            button{
-                min-width: 40vw;
+            .info__wrapper {
+                h3 {
+                    margin: 1rem 0;
+                }
+                p {
+                    margin: 1rem 0;
+                }
+                .icon__wrapper {
+                    margin: 1rem 0;
+                }
+                .icon__wrapper {
+                    min-width: 20vw;
+                }
+                button {
+                    min-width: 30vw;
+                }
             }
         }
     }
-}
+    @media (max-width: 700px) {
+        .about__container {
+            .image__wrapper {
+                img {
+                    box-shadow: none;
+                }
+            }
+            .info__wrapper {
+                h3 {
+                    margin: 1rem 0;
+                }
+                p {
+                    margin: 1rem 0;
+                }
+                .icon__wrapper {
+                    margin: 1rem 0;
+                }
+                .icon__wrapper {
+                    min-width: 30vw;
+                }
+                button {
+                    min-width: 30vw;
+                }
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .about__container {
+            .info__wrapper {
+                h1 {
+                    font-size: 1rem;
+                }
+                h3 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: .8rem;
+                }
+                .icon__wrapper {
+                    min-width: 40vw;
+                    span {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+                button {
+                    min-width: 40vw;
+                }
+            }
+        }
+    }
 }

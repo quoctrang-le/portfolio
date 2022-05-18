@@ -16,7 +16,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50vh;
-  padding: 0 10vh;
+  padding: 0 10vw;
 }
 
 .contact__wrapper .contact__content .title {
@@ -118,9 +118,24 @@
   border: 1px solid black;
 }
 
-@media (max-width: 620px) {
-  .contact__wrapper .contact__wrapper .contact__content .title h1 {
-    font-size: 5px;
+@media (max-width: 1230px) {
+  .contact__wrapper {
+    padding: 0;
+  }
+  .contact__wrapper .contact__content .title h1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact__wrapper {
+    padding: 0;
+  }
+  .contact__wrapper .contact__content .title h1 {
+    font-size: 20px;
+  }
+  .contact__wrapper .contact__content form button {
+    min-width: 50vw;
   }
 }
 /*# sourceMappingURL=contact.css.map */

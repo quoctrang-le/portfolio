@@ -6,7 +6,7 @@
         align-items: center;
         flex-direction: column;
         height: 50vh;
-        padding: 0 10vh;
+        padding: 0 10vw;
         .title {
             text-align: center;
             display: flex;
@@ -51,7 +51,6 @@
                 border: none;
                 outline: none;
                 border-bottom: 2px solid black;
-                
                 bottom: 0;
             }
             button {
@@ -72,13 +71,41 @@
             }
         }
     }
-    @media (max-width: 620px){
-        .contact__wrapper{
-            .contact__content{
-                .title{
-                    h1{
-                        font-size: 5px;
-                    }
+}
+
+@media (max-width: 1230px) {
+    .contact__wrapper {
+        padding: 0;
+        .contact__content {
+            .title {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+            form {
+                button {
+                    // min-width: 50vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .contact__wrapper {
+        padding: 0;
+        .contact__content {
+            .title {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+            form {
+                div {
+                    input {}
+                }
+                button {
+                    min-width: 50vw;
                 }
             }
         }
