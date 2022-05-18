@@ -82,50 +82,24 @@
   cursor: pointer;
 }
 
-.header__background {
-  background-color: white;
-}
-
-@media (max-width: 1120px) {
-  .navbar__wrapper {
+@media (max-width: 1000px) {
+  .header nav .navbar__wrapper {
     display: none;
   }
-  .hamburgur {
-    display: block !important;
+  .header nav .hamburgur {
+    display: block;
   }
-}
-
-.header__active {
-  position: fixed !important;
-}
-
-.header__active .header__nav {
-  background-color: white !important;
-  padding: .5rem 14% !important;
-}
-
-.header__active .header__nav a {
-  color: black !important;
-}
-
-.header__active .header__nav .navbar__item::before {
-  background-color: black !important;
-}
-
-.navbar__item__active::before {
-  width: 100% !important;
 }
 
 @media (max-width: 700px) {
-  .header__nav {
-    padding: .5rem 7% !important;
+  .header .header__nav {
+    padding: .5rem 7%;
   }
-  .header__nav a {
-    font-size: 20px !important;
+  .header .header__nav a {
+    font-size: 20px;
   }
-  .hamburgur {
-    color: black !important;
-    font-size: 20px !important;
+  .header .header__nav .hamburgur {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=header.css.map */

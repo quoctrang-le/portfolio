@@ -57,7 +57,6 @@
 
 .blog__wrapper .carousel .my-slider .item .image__wrapper {
   overflow: hidden;
-  background-color: red;
 }
 
 .blog__wrapper .carousel .my-slider .item img {
@@ -95,7 +94,7 @@
 }
 
 .blog__wrapper .carousel .my-slider .item__child p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -139,7 +138,7 @@
 }
 
 .blog__wrapper .button__blog button {
-  min-width: 7vw;
+  min-width: 10vw;
   min-height: 5vh;
   border: none;
   outline: none;
@@ -154,23 +153,5 @@
   color: black;
   border: 2px solid black;
   cursor: pointer;
-}
-
-@media (max-width: 1000px) {
-  .carousel {
-    padding: 0 !important;
-  }
-  .carousel .item__child h3 {
-    font-size: 15px !important;
-  }
-  .carousel .item__child p {
-    font-size: 12px !important;
-  }
-  .carousel .item__child a {
-    font-size: 10px !important;
-  }
-  .carousel .item__child span {
-    font-size: 10px !important;
-  }
 }
 /*# sourceMappingURL=blog.css.map */

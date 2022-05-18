@@ -70,22 +70,28 @@
 }
 
 @media (max-width: 970px) {
-  .item__wrapper {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
+  .experiences__wrapper .item__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (max-width: 560px) {
-  .item__wrapper {
-    -ms-grid-columns: 1fr !important;
-        grid-template-columns: 1fr !important;
+  .experiences__wrapper .item__wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-  .item__wrapper span i {
-    font-size: 1.5rem !important;
+  .experiences__wrapper .item__wrapper .item {
+    margin-top: 2rem;
   }
-  .item__wrapper h3 {
-    font-size: 1rem !important;
+  .experiences__wrapper .item__wrapper .item span i {
+    font-size: 1.5rem;
+  }
+  .experiences__wrapper .item__wrapper .item h3 {
+    font-size: 1rem;
+  }
+  .experiences__wrapper .item__wrapper .item:first-child {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=experiences.css.map */

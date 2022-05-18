@@ -53,18 +53,34 @@
             }
         }
     }
-}
+
 
 @media (max-width: 1000px){
     .services{
-        grid-template-columns: 1fr 1fr !important;
-        // grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr 1fr ;
+        div{
+            h3{
+                font-size: 1rem;
+            }
+        }
     }
 }
 
 @media (max-width: 560px){
     .services{
-        grid-template-columns: 1fr !important;
-        // grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr ;
+        div{
+            span{
+                width: 2rem;
+                height: 2rem;
+            }
+            h3{
+                font-size: 1rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+        }
     }
+}
 }

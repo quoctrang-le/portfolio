@@ -28,11 +28,11 @@
     .item_wrapper {
         text-align: center;
         color: white;
-        height: 50vh;
+        height: 60vh;
         cursor: pointer;
         .avt {
-            width: 10rem;
-            height: 10rem;
+            width: 8rem;
+            height: 8rem;
             border-radius: 100%;
             background-image: url('../images/avt.jpeg');
             background-size: cover;
@@ -51,7 +51,9 @@
             font-size: 14px;
         }
         p {
-            font-size: 16px;
+            font-size: 14px;
         }
     }
+
+    // @media (max-width:  )
 }
