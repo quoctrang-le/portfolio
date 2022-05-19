@@ -14,6 +14,12 @@
             color: white;
             font-size: 3rem;
             letter-spacing: 2px;
+            &:hover {
+                .cursor {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
         }
         .navbar__wrapper {
             .navbar__menu {
@@ -94,6 +100,34 @@
                     }
                     a {
                         color: black !important;
+                    }
+                }
+            }
+        }
+        .hamburgur {
+            color: black;
+        }
+    }
+    .navbar__active {
+        .navbar__wrapper {
+            .navbar__menu {
+                .navbar__item {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header {
+    nav {
+        .navbar__wrapper {
+            .navbar__menu {
+                .navbar__item__active {
+                    &::before {
+                        width: 100%;
                     }
                 }
             }

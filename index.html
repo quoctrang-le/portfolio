@@ -26,14 +26,14 @@
 </head>
 
 <body>
-    <div id="preload">
-    </div>
+    <!-- <div id="preload">
+    </div> -->
     <header id="header" class="header animate__animated animate__slideInDown">
         <nav id="header__nav" class="header__nav">
             <a href="#" class="logo">Tranq.</a>
             <div class="navbar__wrapper">
                 <ul class="navbar__menu">
-                    <li class="navbar__item">
+                    <li class="navbar__item navbar__item__active">
                         <a href="#" class="navbar__item__link">Home</a>
                     </li>
                     <li class="navbar__item">
@@ -59,7 +59,7 @@
     <!-- end header -->
 
     <!-- start parallax -->
-    <section class="parallax__wrapper">
+    <section class="parallax__wrapper section">
         <div class="parallax__description">
             <h1 class="parallax__item__text">Hi! I'm Tranq.</h1>
             <div class="parallax__wrapper__span">
@@ -86,8 +86,7 @@
     <!-- end parallax -->
 
     <!-- start about -->
-    <div style="height: 20vh" id="about__wrapper"></div>
-    <section class="about__wrapper">
+    <section id="about__wrapper" class="about__wrapper section">
         <div class="about__container">
             <div class="image__wrapper">
                 <div>
@@ -121,7 +120,7 @@
 
     <!-- start services -->
     <div id="services__wrapper" style="height: 18vh"></div>
-    <section class="services__wrapper">
+    <section class="services__wrapper section">
         <div class="title">
             <h3>SERVICES</h3>
             <h1>WHAT I CAN DO</h1>
@@ -178,22 +177,22 @@
     <section class="experiences__wrapper">
         <div class="box--model"></div>
         <div class="item__wrapper">
-            <div class="item">
+            <div class="item itemCountUp">
                 <span><i class="fa-solid fa-users"></i></span>
                 <h3 class="countUp" data-target="220"></h3>
                 <h3>Happy Clients</h3>
             </div>
-            <div class="item">
+            <div class="item itemCountUp">
                 <span><i class="fa-solid fa-thumbs-up"></i></span>
                 <h3 class="countUp" data-target="700"></h3>
                 <h3>Projects Completed</h3>
             </div>
-            <div class="item">
+            <div class="item itemCountUp">
                 <span><i class="fa fa-edit"></i></span>
                 <h3 class="countUp" data-target="1100"></h3>
                 <h3>Lines Of Code</h3>
             </div>
-            <div class="item">
+            <div class="item itemCountUp">
                 <span><i class="fa fa-trophy"></i></span>
                 <h3 class="countUp" data-target="160"></h3>
                 <h3>Awards Achieved</h3>
@@ -203,7 +202,7 @@
     <!-- end experiences -->
 
     <!-- start works -->
-    <section id="works__wrapper" class="works__wrapper">
+    <section id="works__wrapper" class="works__wrapper section">
         <div class="title">
             <h3>PORTFOLIO</h3>
             <h1>WORK I HAVE DONE</h1>
@@ -248,7 +247,7 @@
                 </div>
                 <div data-item="applications" class="itemBox work animate__animated animate__bounceInUp" style="background-image: url('./assets/images/works/5.jpg')">
                     <div>
-                        <h3>WEB DESIGN</h3>
+                        <h3>APPLICATIONS</h3>
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                 </div>
@@ -257,8 +256,10 @@
         </div>
     </section>
     <!-- end works -->
+
+    <!-- start blog -->
     <div id="blog__wrapper" style="height: 10vh;"></div>
-    <section class="blog__wrapper">
+    <section class="blog__wrapper section">
         <div class="title">
             <h3>BLOG</h3>
             <h1>LATEST NEWS</h1>
@@ -335,7 +336,7 @@
 
     <!-- start introduction -->
     <div id="introduce__wrapper" style="height: 10vh;"></div>
-    <section class="introduce__wrapper">
+    <section class="introduce__wrapper section">
         <div class="carousel">
             <div class="item_wrapper">
                 <div class="avt"></div>
@@ -364,17 +365,17 @@
 
     <!-- start contact -->
     <div id="contact__wrapper" style="height: 10vh;"></div>
-    <section class="contact__wrapper">
+    <section class="contact__wrapper section">
         <div class="contact__content">
             <div class="title">
                 <h3>CONTACT</h3>
                 <h1>GET IN TOUCH</h1>
             </div>
             <form action="">
-                <div>
-                    <input placeholder="Name" type="text">
-                    <input placeholder="Email" type="text">
-                </div>
+
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="text">
+
                 <textarea placeholder="How can we help you?" name="" id="" cols="30" rows="10"></textarea>
                 <button>SENT MESSAGE</button>
             </form>
@@ -447,7 +448,8 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
+                dots: false,
                 responsive: [{
                     breakpoint: 870,
                     settings: {
@@ -464,7 +466,8 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 1000,
+                dots: true
             });
         });
     </script>

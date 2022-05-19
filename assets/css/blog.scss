@@ -15,6 +15,9 @@
     .carousel {
         margin: 5vh 0;
         padding: 0 5vw;
+        .slick-dots {
+            display: none;
+        }
         .my-slider {
             .slick-prev {
                 display: none !important;
@@ -95,6 +98,22 @@
                 color: black;
                 border: 2px solid black;
                 cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .blog__wrapper {
+        .carousel {
+            .my-slider {
+                .item {
+                    .item__child {
+                        h3 {
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }

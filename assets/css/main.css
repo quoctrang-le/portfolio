@@ -14,6 +14,12 @@ html {
   position: relative;
 }
 
+body h1:hover + .cursor,
+html h1:hover + .cursor {
+  width: 5rem;
+  height: 5rem;
+}
+
 #preload {
   width: 100vw;
   height: 100vh;
@@ -46,7 +52,7 @@ html {
   position: absolute;
   color: white;
   font-size: 4rem;
-  top: 3%;
+  top: 1%;
   right: 5%;
   cursor: pointer;
 }
@@ -127,6 +133,22 @@ html {
 }
 
 .cursor2 {
-  border: 2px solid black;
+  width: 5rem;
+  height: 5rem;
+  -webkit-box-shadow: 0 0 100px 7px rgba(37, 37, 37, 0.6);
+          box-shadow: 0 0 100px 7px rgba(37, 37, 37, 0.6);
+  border: 2px solid #6b6b6b;
+}
+
+.cursorWhite {
+  -webkit-box-shadow: 0 0 50px 5px rgba(253, 253, 253, 0.6);
+          box-shadow: 0 0 50px 5px rgba(253, 253, 253, 0.6);
+  border: 2px solid white;
+}
+
+@media (max-width: 1300px) {
+  .cursor {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -24,47 +24,84 @@
     }
     .carousel {
         z-index: 1;
-    }
-    .item_wrapper {
-        text-align: center;
-        color: white;
-        height: 40vh;
-        cursor: pointer;
-        .avt {
-            width: 8rem;
-            height: 8rem;
-            border-radius: 100%;
-            background-image: url('../images/avt.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+        .item_wrapper {
+            text-align: center;
+            color: white;
+            height: 40vh;
+            cursor: pointer;
+            .avt {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 100%;
+                background-image: url('../images/avt.jpeg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h3 {
+                margin-top: 1rem;
+                font-size: 24px;
+            }
+            h5 {
+                margin-bottom: 1rem;
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .slick-dots {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        h3 {
-            margin-top: 1rem;
-            font-size: 24px;
-        }
-        h5 {
-            margin-bottom: 1rem;
-            font-size: 14px;
-        }
-        p {
-            font-size: 14px;
+            li {
+                transition: .3s;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 100%;
+                opacity: .3;
+                background-color: white;
+                cursor: pointer;
+                &:nth-child(2) {
+                    margin: 0 15px;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button {
+                    display: none;
+                }
+            }
+            .slick-active {
+                opacity: 1;
+            }
         }
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .introduce__wrapper {
         padding: 1vh 10vw;
-        .item_wrapper {
-            h3 {
-                font-size: 16px;
+        .carousel {
+            .avt {
+                width: 4rem;
+                height: 4rem;
             }
-            p {
-                font-size: 10px;
+            .item_wrapper {
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
+            .slick-dots {
+                margin-top: 10px;
             }
         }
     }
