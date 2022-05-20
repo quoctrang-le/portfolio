@@ -112,6 +112,12 @@
   opacity: 1;
 }
 
+@media (max-width: 850px) {
+  .introduce__wrapper .carousel .slick-dots {
+    margin-top: 10px;
+  }
+}
+
 @media (max-width: 400px) {
   .introduce__wrapper {
     padding: 1vh 10vw;
