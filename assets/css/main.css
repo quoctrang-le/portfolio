@@ -14,12 +14,6 @@ html {
   position: relative;
 }
 
-body h1:hover + .cursor,
-html h1:hover + .cursor {
-  width: 5rem;
-  height: 5rem;
-}
-
 #preload {
   width: 100vw;
   height: 100vh;
@@ -35,11 +29,13 @@ html h1:hover + .cursor {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-#preload div {
-  width: 4rem;
-  height: 4rem;
+#preload .white {
+  width: 3rem;
+  height: 3rem;
   background-color: white;
   border-radius: 100%;
   position: relative;
@@ -55,7 +51,7 @@ html h1:hover + .cursor {
   z-index: 101;
 }
 
-#preload div .circle {
+#preload .white .circle {
   background-color: white;
   border-radius: 100%;
   position: absolute;
@@ -66,8 +62,7 @@ html h1:hover + .cursor {
           animation: preloadAnimation .8s ease-out infinite;
 }
 
-#preload::after {
-  content: '';
+#preload .after {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -75,10 +70,11 @@ html h1:hover + .cursor {
   height: 50%;
   top: 0;
   left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
-#preload::before {
-  content: '';
+#preload .before {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -86,6 +82,8 @@ html h1:hover + .cursor {
   height: 50%;
   bottom: 0;
   left: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @-webkit-keyframes preloadAnimation {
@@ -127,50 +125,6 @@ html h1:hover + .cursor {
   100% {
     opacity: 0;
     border-width: 5px;
-  }
-}
-
-.preload__active::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: black;
-  height: 50%;
-  top: 0;
-  left: 0;
-  -webkit-animation: pre .8s ease-out infinite;
-          animation: pre .8s ease-out infinite;
-}
-
-.preload__active::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: black;
-  height: 50%;
-  bottom: 0;
-  left: 0;
-  -webkit-animation: pre .8s ease-out infinite;
-          animation: pre .8s ease-out infinite;
-}
-
-@-webkit-keyframes pre {
-  from {
-    height: 50%;
-  }
-  to {
-    height: 0%;
-  }
-}
-
-@keyframes pre {
-  from {
-    height: 50%;
-  }
-  to {
-    height: 0%;
   }
 }
 
@@ -275,8 +229,8 @@ html h1:hover + .cursor {
 }
 
 .cursor2 {
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   -webkit-box-shadow: 0 0 100px 7px rgba(37, 37, 37, 0.6);
           box-shadow: 0 0 100px 7px rgba(37, 37, 37, 0.6);
   border: 2px solid #6b6b6b;

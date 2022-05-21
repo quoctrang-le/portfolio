@@ -11,10 +11,6 @@ body,
 html {
     overflow-x: hidden;
     position: relative;
-    h1:hover+.cursor {
-        width: 5rem;
-        height: 5rem;
-    }
 }
 
 #preload {
@@ -26,9 +22,10 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    div {
-        width: 4rem;
-        height: 4rem;
+    transition: .5s;
+    .white {
+        width: 3rem;
+        height: 3rem;
         background-color: white;
         border-radius: 100%;
         position: relative;
@@ -45,8 +42,7 @@ html {
             animation: preloadAnimation .8s ease-out infinite;
         }
     }
-    &::after {
-        content: '';
+    .after {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -54,9 +50,9 @@ html {
         height: 50%;
         top: 0;
         left: 0;
+        transition: .5s;
     }
-    &::before {
-        content: '';
+    .before {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -64,6 +60,7 @@ html {
         height: 50%;
         bottom: 0;
         left: 0;
+        transition: .5s;
     }
     @keyframes preloadAnimation {
         0% {
@@ -85,40 +82,9 @@ html {
             border-width: 5px;
         }
     }
+    
 }
 
-.preload__active {
-    &::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: black;
-        height: 50%;
-        top: 0;
-        left: 0;
-        animation: pre .8s ease-out infinite;
-    }
-    &::before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-color: black;
-        height: 50%;
-        bottom: 0;
-        left: 0;
-        animation: pre .8s ease-out infinite;
-    }
-    @keyframes pre {
-        from {
-            height: 50%;
-        }
-        to {
-            height: 0%;
-        }
-    }
-}
 
 .model__navbar {
     position: fixed;
@@ -193,8 +159,8 @@ html {
 }
 
 .cursor2 {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     box-shadow: 0 0 100px 7px rgba(37, 37, 37, 0.6);
     border: 2px solid rgb(107, 107, 107);
 }
