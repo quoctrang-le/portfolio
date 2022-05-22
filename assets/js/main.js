@@ -72,19 +72,19 @@ counters.forEach((counter) => {
   })
 })
 
-// const pre = document.getElementById('preload')
-// const preload__item = document.querySelectorAll('.preload__item')
-// function preloader() {
-//   setTimeout(() => {
-//     preload__item.forEach((item) => (item.style.height = 0 + '%'))
-//     pre.style.opacity = 1
-//   }, 1600)
-//   setTimeout(() => {
-//     pre.style.display = 'none'
-//     pre.style.opacity = 0
-//   }, 2000)
-// }
-// preloader()
+const pre = document.getElementById('preload')
+const preload__item = document.querySelectorAll('.preload__item')
+function preloader() {
+  setTimeout(() => {
+    preload__item.forEach((item) => (item.style.height = 0 + '%'))
+    pre.style.opacity = 1
+  }, 1600)
+  setTimeout(() => {
+    pre.style.display = 'none'
+    pre.style.opacity = 0
+  }, 2000)
+}
+preloader()
 
 const lists = document.querySelectorAll('.list')
 const items = document.querySelectorAll('.itemBox')
