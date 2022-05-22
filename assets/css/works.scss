@@ -2,8 +2,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 10vh 10vw;
     gap: 50px;
+    padding-top: 8rem;
     .title {
         text-align: center;
         display: flex;
@@ -64,7 +64,7 @@
         .works {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-gap: 30px;
+            grid-gap: 20px;
             padding: 0 10vw;
             .hide {
                 display: none !important;
@@ -80,7 +80,7 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
-                width: 20rem;
+                width: 100%;
                 height: 20rem;
                 div {
                     width: 90%;
@@ -122,23 +122,27 @@
             }
         }
     }
-    @media (max-width: 1500px) {
+
+    @media (max-width: 1248px) {
         .works__container {
-            padding: 5vh 5vw;
             .works {
                 grid-template-columns: repeat(2, 1fr);
+                padding: 0 10rem;
+                .work {
+                    height: 20rem;
+                }
             }
         }
     }
-    @media (max-width: 1000px) {
+    @media (max-width: 930px) {
         .works__container {
-            // padding: 5vh 5vw;
+
             .works {
-                grid-template-columns: repeat(2, 1fr);
-                padding: 0;
+                padding: 0 5rem;
+
+                grid-template-columns: 1fr 1fr;
                 .work {
-                    width: 10rem;
-                    height: 10rem;
+                    height: 13rem;
                 }
             }
         }
@@ -146,6 +150,8 @@
     @media (max-width: 500px) {
         .works__container {
             .works {
+                padding: 0 1rem;
+
                 grid-template-columns: 1fr;
                 .work {
                     width: 13rem;

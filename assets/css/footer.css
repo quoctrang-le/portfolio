@@ -6,6 +6,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5vh 20vw;
+  position: relative;
 }
 
 .footer__wrapper .cont {
@@ -46,6 +47,29 @@
   .footer__wrapper .cont .cont__item {
     margin: 1rem;
   }
+}
+
+.footer__wrapper .darkmode__btn {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.footer__wrapper .darkmode__btn i {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.footer__wrapper .darkmode__btn i:last-child {
+  opacity: .3;
 }
 
 .moveTop {

@@ -4,14 +4,13 @@
     align-items: center;
     position: relative;
     padding-top: 15vh;
-    &::before {
-        content: '';
+    .bf {
         height: 3px;
         position: absolute;
         left: 0;
         width: 100%;
         top: -2px;
-        background-color: rgb(255, 255, 255);
+        background-color: white;
     }
     .about__container {
         max-width: 80vw;

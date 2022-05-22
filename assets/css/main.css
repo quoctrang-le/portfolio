@@ -196,8 +196,6 @@ html {
 }
 
 .model__navbar ul li a {
-  -webkit-transform: .2s;
-          transform: .2s;
   color: white;
   padding: 2rem 0;
   font-size: 20px;

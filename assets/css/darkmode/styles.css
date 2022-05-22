@@ -1,4 +1,107 @@
 .darkmode {
   background-color: #222222;
 }
+
+.darkmode h1, .darkmode a, .darkmode p, .darkmode span, .darkmode h3, .darkmode a, .darkmode li {
+  color: white;
+}
+
+.darkmode section {
+  background-color: #222222;
+}
+
+.darkmode input, .darkmode textarea {
+  background-color: #222222;
+  border-bottom: 2px solid white !important;
+  color: white;
+}
+
+.darkmode .about__wrapper .bf {
+  display: none;
+}
+
+.darkmode .header .show__header {
+  background-color: #222222;
+  -webkit-box-shadow: 0 2px 10px 1px #a2a2a2;
+          box-shadow: 0 2px 10px 1px #a2a2a2;
+}
+
+.darkmode .header .show__header a {
+  color: white;
+}
+
+.darkmode .header .show__header .hamburgur {
+  color: white;
+}
+
+.darkmode .header .show__header .navbar__wrapper ul li::before {
+  background-color: white !important;
+}
+
+.darkmode .header .show__header .navbar__wrapper ul li a {
+  color: white !important;
+}
+
+.darkmode .parallax__wrapper::before {
+  display: none !important;
+}
+
+.darkmode .parallax__wrapper .parallax__description {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.darkmode .parallax__wrapper .svg__wave {
+  opacity: .4;
+}
+
+.darkmode .services__wrapper .services div {
+  border: 1px solid white;
+  padding: 2rem 0;
+}
+
+.darkmode .works__wrapper .title h3 {
+  color: white;
+}
+
+.darkmode .works__wrapper .title h1 {
+  color: white;
+}
+
+.darkmode .works__wrapper .title ul li {
+  color: white;
+}
+
+.darkmode .works__wrapper .title ul li::before {
+  background-color: white;
+}
+
+.darkmode .works__wrapper .works__container .works .work div {
+  background-color: rgba(70, 70, 70, 0.8);
+}
+
+.darkmode .works__wrapper .works__container .works .work div span {
+  background-color: #a5a5a5;
+}
+
+.darkmode .blog__wrapper .carousel .my-slider .item__child {
+  background-color: #222222;
+}
+
+.darkmode .blog__wrapper .carousel .my-slider .item__child div a {
+  color: white;
+  border-bottom: 1px solid #fffefe;
+}
+
+.darkmode .blog__wrapper .carousel .my-slider .item__child div span {
+  color: #d0d0d0;
+  font-size: 13px;
+}
+
+.darkmode .cursor2 {
+  width: 4rem;
+  height: 4rem;
+  -webkit-box-shadow: 0 0 100px 10px rgba(255, 255, 255, 0.6);
+          box-shadow: 0 0 100px 10px rgba(255, 255, 255, 0.6);
+  border: 2px solid #fcfcfc;
+}
 /*# sourceMappingURL=styles.css.map */

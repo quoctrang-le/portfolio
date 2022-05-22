@@ -78,6 +78,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: 3rem;
 }
 
 .introduce__wrapper .carousel .slick-dots li {

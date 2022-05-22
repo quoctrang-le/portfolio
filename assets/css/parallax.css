@@ -52,6 +52,8 @@
 .parallax__wrapper .parallax__description .parallax__wrapper__span .animation .dynamic {
   position: relative;
   font-weight: bold;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .parallax__wrapper .parallax__description .parallax__wrapper__span .animation .dynamic::after {

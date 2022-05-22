@@ -3,6 +3,7 @@
     color: white;
     flex-direction: column;
     padding: 5vh 20vw;
+    position: relative;
     .cont {
         display: flex;
         justify-content: space-around;
@@ -32,6 +33,20 @@
         .cont {
             .cont__item {
                 margin: 1rem;
+            }
+        }
+    }
+    .darkmode__btn{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        i{
+            cursor: pointer;
+            font-size: 20px;
+            &:last-child{
+                opacity: .3;
             }
         }
     }

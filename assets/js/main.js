@@ -1,24 +1,32 @@
 const parallax = document.querySelector('.parallax__wrapper')
 const show__header = document.querySelector('.header__nav')
-
 const navbar__item__active = document.querySelectorAll('.navbar__item')
+const sections = document.querySelectorAll('.section')
+
 window.addEventListener('scroll', function () {
+  // parallax effect
   let offset = window.pageYOffset
-  parallax.style.backgroundPositionY = offset * 0.7 + 'px'
+  parallax.style.backgroundPositionY = offset * 0.5 + 'px'
   if (pageYOffset > 200) {
     show__header.classList.add('show__header')
     show__header.parentElement.style.position = 'fixed'
   } else {
     show__header.classList.remove('show__header')
   }
-})
-
-navbar__item__active.forEach((item) => {
-  item.addEventListener('click', () => {
-    navbar__item__active.forEach((item) => {
-      item.classList.remove('navbar__item__active')
-    })
-    item.classList.add('navbar__item__active')
+  // parallax effect
+  let current = '' //which section we are in
+  sections.forEach((section, i) => {
+    const sectionHeight = section.clientHeight // height of element
+    const sectionTop = section.offsetTop //distant from top to element
+    if (this.pageYOffset >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute('id')
+    }
+  })
+  navbar__item__active.forEach((item) => {
+    item.classList.remove('navbar__item__active')
+    if (item.getAttribute('scroll') == current) {
+      item.classList.add('navbar__item__active')
+    }
   })
 })
 
@@ -64,19 +72,19 @@ counters.forEach((counter) => {
   })
 })
 
-const pre = document.getElementById('preload')
-const preload__item = document.querySelectorAll('.preload__item')
-function preloader() {
-  setTimeout(() => {
-    preload__item.forEach((item) => (item.style.height = 0 + '%'))
-    pre.style.opacity = 1
-  }, 1600)
-  setTimeout(() => {
-    pre.style.display = 'none'
-    pre.style.opacity = 0
-  }, 2000)
-}
-preloader()
+// const pre = document.getElementById('preload')
+// const preload__item = document.querySelectorAll('.preload__item')
+// function preloader() {
+//   setTimeout(() => {
+//     preload__item.forEach((item) => (item.style.height = 0 + '%'))
+//     pre.style.opacity = 1
+//   }, 1600)
+//   setTimeout(() => {
+//     pre.style.display = 'none'
+//     pre.style.opacity = 0
+//   }, 2000)
+// }
+// preloader()
 
 const lists = document.querySelectorAll('.list')
 const items = document.querySelectorAll('.itemBox')
@@ -262,4 +270,20 @@ document.querySelector('.header').childNodes.forEach((child) => {
   child.addEventListener('mouseout', () => {
     cursor.classList.remove('cursor2')
   })
+})
+
+// darkmode part
+const darkmod__btn__light = document.querySelector('.darkmode__btn-light')
+const darkmod__btn__dark = document.querySelector('.darkmode__btn-dark')
+const body = document.querySelector('.body')
+
+darkmod__btn__dark.addEventListener('click', () => {
+  body.classList.add('darkmode')
+  darkmod__btn__dark.style.opacity = 1
+  darkmod__btn__light.style.opacity = 0.3
+})
+darkmod__btn__light.addEventListener('click', () => {
+  body.classList.remove('darkmode')
+  darkmod__btn__dark.style.opacity = 0.3
+  darkmod__btn__light.style.opacity = 1
 })

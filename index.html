@@ -26,36 +26,36 @@
     <title>TRANG</title>
 </head>
 
-<body>
-    <div id="preload" class="preload">
+<body class="body">
+    <!-- <div id="preload" class="preload">
         <div class="after preload__item"></div>
         <div class="before preload__item"></div>
         <div class="white">
             <div class="circle"></div>
         </div>
-    </div>
+    </div> -->
     <header id="header" class="header animate__animated animate__slideInDown">
         <nav id="header__nav" class="header__nav">
             <a href="#" class="logo">Tranq.</a>
             <div class="navbar__wrapper">
                 <ul class="navbar__menu">
-                    <li class="navbar__item navbar__item__active">
-                        <a href="#" class="navbar__item__link">Home</a>
+                    <li scroll="home" class="navbar__item navbar__item__active">
+                        <a href="#home" class="navbar__item__link">Home</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#about__wrapper" class="navbar__item__link">About</a>
+                    <li scroll="about" class="navbar__item">
+                        <a href="#about" class="navbar__item__link">About</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#services__wrapper" class="navbar__item__link">Services</a>
+                    <li scroll="services" class="navbar__item">
+                        <a href="#services" class="navbar__item__link">Services</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#works__wrapper" class="navbar__item__link">Works</a>
+                    <li scroll="works" class="navbar__item">
+                        <a href="#works" class="navbar__item__link">Works</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#blog__wrapper" class="navbar__item__link">Blog</a>
+                    <li scroll="blog" class="navbar__item">
+                        <a href="#blog" class="navbar__item__link">Blog</a>
                     </li>
-                    <li class="navbar__item">
-                        <a href="#contact__wrapper" class="navbar__item__link">Contact</a>
+                    <li scroll="contact" class="navbar__item">
+                        <a href="#contact" class="navbar__item__link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -65,7 +65,7 @@
     <!-- end header -->
 
     <!-- start parallax -->
-    <section class="parallax__wrapper section">
+    <section class="parallax__wrapper section" id="home">
         <div class="parallax__description">
             <h1 class="parallax__item__text">Hi! I'm Tranq.</h1>
             <div class="parallax__wrapper__span">
@@ -92,7 +92,8 @@
     <!-- end parallax -->
 
     <!-- start about -->
-    <section id="about__wrapper" class="about__wrapper section">
+    <section class="about__wrapper section" id="about">
+        <div class="bf"></div>
         <div class="about__container">
             <div class="image__wrapper">
                 <div>
@@ -125,8 +126,8 @@
     <!-- end about -->
 
     <!-- start services -->
-    <div id="services__wrapper" style="height: 18vh"></div>
-    <section class="services__wrapper section">
+    <div style="height: 15vh;"></div>
+    <section class="services__wrapper section" id="services">
         <div class="title">
             <h3>SERVICES</h3>
             <h1>WHAT I CAN DO</h1>
@@ -179,7 +180,6 @@
     <!-- end services -->
 
     <!-- start experiences -->
-    <div style="height: 10vh; background-color: #f2f2f2" id="experiences__wrapper"></div>
     <section class="experiences__wrapper">
         <div class="box--model"></div>
         <div class="item__wrapper">
@@ -208,7 +208,7 @@
     <!-- end experiences -->
 
     <!-- start works -->
-    <section id="works__wrapper" class="works__wrapper section">
+    <section class="works__wrapper section" id="works">
         <div class="title">
             <h3>PORTFOLIO</h3>
             <h1>WORK I HAVE DONE</h1>
@@ -264,8 +264,8 @@
     <!-- end works -->
 
     <!-- start blog -->
-    <div id="blog__wrapper" style="height: 10vh;"></div>
-    <section class="blog__wrapper section">
+    <div style="height: 5rem;"></div>
+    <section class="blog__wrapper section" id="blog">
         <div class="title">
             <h3>BLOG</h3>
             <h1>LATEST NEWS</h1>
@@ -341,8 +341,8 @@
     <!-- end blog -->
 
     <!-- start introduction -->
-    <div id="introduce__wrapper" style="height: 10vh;"></div>
-    <section class="introduce__wrapper section">
+    <div  style="height: 10vh;"></div>
+    <section class="introduce__wrapper">
         <div class="carousel">
             <div class="item_wrapper">
                 <div class="avt"></div>
@@ -370,8 +370,8 @@
     <!-- end introduction -->
 
     <!-- start contact -->
-    <div id="contact__wrapper" style="height: 10vh;"></div>
-    <section class="contact__wrapper section">
+    <div style="height: 10vh;"></div>
+    <section class="contact__wrapper section" id="contact">
         <div class="contact__content">
             <div class="title">
                 <h3>CONTACT</h3>
@@ -412,33 +412,35 @@
         </div>
         <hr>
         <h6>Kalvin © 2021. All Right Reserved, Designed By Cosmos-Themes.</h6>
+        <div class="darkmode__btn">
+            <i class="fa-solid fa-sun darkmode__btn-light"></i>
+            <i class="fa-solid fa-moon darkmode__btn-dark"></i>
+        </div>
     </section>
     <span class="moveTop animate__animated animate__backInUp">
-        
             <i class="fa-solid fa-rocket"></i>
-        
     </span>
 
     <div class="model__navbar animate__animated animate__fadeInDownBig">
         <i class="fa-solid fa-xmark close"></i>
         <ul>
             <li>
-                <a class="model__navbar__link" href="#">Home</a>
+                <a class="model__navbar__link" href="home">Home</a>
             </li>
             <li>
-                <a class="model__navbar__link" href="#about__wrapper">About</a>
+                <a class="model__navbar__link" href="#about">About</a>
             </li>
             <li>
-                <a class="model__navbar__link" href="#services__wrapper">Services</a>
+                <a class="model__navbar__link" href="#services">Services</a>
             </li>
             <li>
-                <a class="model__navbar__link" href="#works__wrapper">Works</a>
+                <a class="model__navbar__link" href="#works">Works</a>
             </li>
             <li>
-                <a class="model__navbar__link" href="#blog__wrapper">Blog</a>
+                <a class="model__navbar__link" href="#blog">Blog</a>
             </li>
             <li>
-                <a class="model__navbar__link" href="#contact__wrapper">Contact</a>
+                <a class="model__navbar__link" href="#contact">Contact</a>
             </li>
         </ul>
     </div>
