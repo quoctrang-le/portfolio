@@ -2,7 +2,13 @@
   background-color: #222222;
 }
 
-.darkmode h1, .darkmode a, .darkmode p, .darkmode span, .darkmode h3, .darkmode a, .darkmode li {
+.darkmode h1,
+.darkmode a,
+.darkmode p,
+.darkmode span,
+.darkmode h3,
+.darkmode a,
+.darkmode li {
   color: white;
 }
 
@@ -10,10 +16,19 @@
   background-color: #222222;
 }
 
-.darkmode input, .darkmode textarea {
+.darkmode input,
+.darkmode textarea {
   background-color: #222222;
   border-bottom: 2px solid white !important;
   color: white;
+}
+
+.darkmode .above__services {
+  display: none;
+}
+
+.darkmode .about__wrapper {
+  padding-top: 5rem;
 }
 
 .darkmode .about__wrapper .bf {
